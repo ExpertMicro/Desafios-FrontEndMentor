@@ -1,0 +1,150 @@
+/* ESTILOS GERAIS */
+body, h1, h2, h3, p, ul, span {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background: hsl(210, 46%, 95%);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+  margin: 100px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  grid-template-areas:
+  "card-01 card-01 card-02 card-05"
+  "card-03 card-04 card-04 card-05";
+}
+
+.card-01 {
+  grid-area: card-01;
+  background: hsl(263, 55%, 52%);
+  background-image: url('../img/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: 75% 0;
+}
+.card-02 {
+  grid-area: card-02;
+  background: hsl(217, 19%, 35%);
+}
+.card-03 {
+  grid-area: card-03;
+  background: hsl(0, 0%, 100%);
+}
+.card-04 {
+  grid-area: card-04;
+  background: hsl(219, 29%, 14%);
+}
+.card-05 {
+  grid-area: card-05;
+  background: hsl(0, 0%, 100%);
+}
+
+
+.container .card-style-general {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 34px -1px rgba(0, 0, 0, .19);
+}
+
+.container .card .profile {
+  display: flex;
+}
+
+.container .card .profile .avatar img {
+  border-radius: 50%;
+}
+
+.container .card .profile .profile-general {
+  margin-left: 20px;
+}
+
+.container .card .profile .profile-general .profile-name, .profile-status {
+  margin-top: 8px;
+  display: block;
+  font-size: 16px;
+  color: hsl(210, 46%, 95%);
+}
+
+.container .card .profile .profile-general .profile-status {
+  margin-top: 3px;
+  font-size: 14px;
+  color: hsl(0, 0%, 81%);
+}
+
+.container .card .evaluation .title {
+  font-size: 22px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.container .card .evaluation .quote {
+  margin-top: 20px;
+  color: hsl(0, 0%, 81%);
+}
+
+.container .card-03 .evaluation .title {
+  color: hsl(217, 19%, 35%);
+}
+
+.container .card-03 .evaluation .quote {
+  color: hsl(217, 19%, 35%);
+}
+
+.container .card-03 .profile .profile-general .profile-name, .profile-status {
+  color: hsl(217, 19%, 35%);
+}
+
+.container .card-05 .evaluation .title {
+  color: hsl(217, 19%, 35%);
+}
+
+.container .card-05 .evaluation .quote {
+  color: hsl(217, 19%, 35%);
+}
+
+.container .card-05 .profile .profile-general .profile-name, .profile-status {
+  color: hsl(217, 19%, 35%);
+}
+
+@media screen and (max-width: 1335px) {
+  .container .card-style-general {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 1175px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "card-01 card-02"
+    "card-03 card-04"
+    "card-05 .";
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .container {
+    margin: 50px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    margin: 0px;
+  }
+}

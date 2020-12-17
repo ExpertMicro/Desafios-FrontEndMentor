@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  padding: 0px;
+	margin: 0px;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  margin: 120px;
+  background: #fff;
+}
+
+.container .intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  "area-users area-rating";
+  margin-bottom: 60px;
+}
+
+.area-users {
+  grid-area: area-users;
+}
+
+.area-rating {
+  grid-area: area-rating;
+}
+
+.container .users h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 10px;
+}
+
+.container .users p {
+  color: hsl(303, 10%, 53%);
+}
+
+.container .card-intro {
+  display: flex;
+}
+
+.container .card-intro .card {
+  height: 290px;
+}
+
+/*.container .intro .area-users {
+  width: 50%;
+}*/
+
+.container .intro .area-rating {
+  margin-left: 120px;
+  margin-top: 15px;
+}
+
+.container .intro .area-rating .review-01 {
+  padding: 15px 0px 9px 27px;
+  border-radius: 5px;
+  background: hsl(300, 24%, 96%);
+  width: 460px;
+}
+
+.container .intro .area-rating .review-02 {
+  padding: 15px 0px 9px 27px;
+  border-radius: 5px;
+  background: hsl(300, 24%, 96%);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+  width: 460px;
+}
+
+.container .intro .area-rating .review-03 {
+  padding: 15px 0px 9px 27px;
+  border-radius: 5px;
+  background: hsl(300, 24%, 96%);
+  margin-left: 80px;
+  width: 460px;
+}
+
+.container .intro .area-rating .reviews {
+  display: flex;
+}
+
+.container .intro .area-rating .reviews .stars-rating .icon-star {
+  margin-right: 10px;
+}
+
+.container .intro .area-rating .reviews .rating {
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+  margin-left: 20px;
+}
+
+
+.container .card-intro .card {
+  background: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.container .card-intro .card-quote-02 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.container .card-intro .card-quote-02 {
+  margin-top: 20px;
+}
+
+.container .card-intro .card-quote-03 {
+  margin-top: 40px;
+}
+
+.container .card-intro .card .profile {
+  display: flex;
+}
+
+.container .card-intro .card .profile .avatar img {
+  border-radius: 50%;
+}
+
+.container .card-intro .card .profile .profile-general {
+  margin-left: 30px;
+  margin-top: 22px;
+}
+
+.container .card-intro .card .profile .profile-general .profile-status {
+  display: block;
+  margin-top: 5px;
+}
+
+.container .card-intro .card .profile .profile-general .profile-name {
+  font-weight: 500;
+  color: #fff;
+}
+
+.container .card-intro .card .profile .profile-general .profile-status {
+  color: hsl(333, 80%, 67%);
+}
+
+.container .card-intro .card .short {
+  margin-top: 25px;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 1390px) {
+  .container .card-intro .card {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .container .intro .area-rating {
+    margin-left: 40px;
+  }
+
+  .container .card-intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .card-intro .card-quote-02 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container .card-intro .card {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .container .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .users h1 {
+    text-align: center;
+  }
+  .container .users p {
+    text-align: center;
+  }
+  .container .intro .users {
+    margin-bottom: 20px;
+  }
+  .container .intro .area-rating {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .container .intro .area-rating .review-02 {
+    margin-left: 0px;
+  }
+  .container .intro .area-rating .review-03 {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    margin: 60px 20px 0px 20px;
+  }
+  .container .intro .area-rating .reviews {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .intro .area-rating .review-01 {
+    padding: 15px 0px 9px 0px;
+    width: 300px;
+  }
+  .container .intro .area-rating .review-02 {
+    padding: 15px 0px 9px 0px;
+    width: 300px;
+  }
+  .container .intro .area-rating .review-03 {
+    padding: 15px 0px 9px 0px;
+    width: 300px;
+  }
+}
+
+
+
+

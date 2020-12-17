@@ -112,14 +112,6 @@ img {
   margin-right: 30px;
 }
 
-.container .card-intro .card-quote-02 {
-  margin-top: 20px;
-}
-
-.container .card-intro .card-quote-03 {
-  margin-top: 40px;
-}
-
 .container .card-intro .card .profile {
   display: flex;
 }
@@ -172,6 +164,8 @@ img {
   .container .card-intro .card-quote-02 {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .container .card-intro .card {
     height: auto;

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 12px;
+}
+
+.view-port {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-01 {
+  display: flex;
+}
+
+.section-01 .bg-card-02 {
+  width: 40%;
+}
+
+.bg-card-01 {
+  background-image: url(../img/desktop-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60%;
+}
+
+.section-01 .bg-card-01 .menu .container {
+  display: flex;
+  margin-left: 80px;
+  padding-top: 60px;
+  padding-bottom: 614px;
+}
+
+.section-01 .bg-card-01 .menu .container .menu-nav {
+  flex: 1;
+}
+
+.section-01 .bg-card-01 .menu .container .menu-nav ul {
+  margin-left: 80px;
+  display: flex;
+  list-style: none;
+}
+
+.section-01 .bg-card-01 .menu .container .menu-nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.section-01 .bg-card-02 {
+  padding: 170px 80px 170px 80px;
+}
+
+.section-01 .bg-card-02 h2 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.section-01 .bg-card-02 p {
+  color: hsl(0, 0%, 63%);
+  margin-top: 25px;
+  line-height: 1.8em;
+}
+
+.section-01 .bg-card-02 .button-shop-now {
+  margin-top: 25px;
+}
+
+.section-01 .bg-card-02 .button-shop-now a {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 20px;
+  letter-spacing: 8px;
+}
+
+.section-01 .button-control {
+  position: absolute;
+  background: #000;
+  left: 60%;
+  top: 65.4%;
+  cursor: pointer;
+  outline: none;
+}
+
+.section-01 .button-left {
+  width: 70px;
+  height: 70px;
+  border: none;
+  outline: none;
+  background: #000;
+  cursor: pointer;
+}
+
+.section-01 .button-right {
+  width: 70px;
+  height: 70px;
+  border: none;
+  outline: none;
+  background: #000;
+  cursor: pointer;
+}
+
+.section-01 .button-left:hover {
+  background: hsl(0, 0%, 27%);
+}
+
+.section-01 .button-right:hover {
+  background: hsl(0, 0%, 27%);
+}
+
+.section-02 {
+  display: flex;
+}
+
+.section-02 .card-02 {
+  padding: 80px 40px 80px 40px;
+}
+
+.section-02 .card-02 h3 {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.section-02 .card-02 p {
+  color: hsl(0, 0%, 63%);
+  line-height: 1.8em;
+  margin-top: 10px;
+}

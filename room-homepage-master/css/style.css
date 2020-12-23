@@ -1,18 +1,24 @@
+/* General */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Spartan', sans-serif;
   font-size: 12px;
 }
+/*-----------------------*/
+
 
 .view-port {
   height: 100vh;
   overflow: hidden;
   position: relative;
+}
+
+.section-01 .bgCard01 .menu .mobile-container {
+  display: none;
 }
 
 .section-01 {
@@ -23,31 +29,31 @@ body {
   width: 40%;
 }
 
-.bg-card-01 {
+.bgCard01 {
   background-image: url(../img/desktop-image-hero-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 60%;
 }
 
-.section-01 .bg-card-01 .menu .container {
+.section-01 .bgCard01 .menu .container {
   display: flex;
   margin-left: 80px;
   padding-top: 60px;
   padding-bottom: 614px;
 }
 
-.section-01 .bg-card-01 .menu .container .menu-nav {
+.section-01 .bgCard01 .menu .container .menu-nav {
   flex: 1;
 }
 
-.section-01 .bg-card-01 .menu .container .menu-nav ul {
+.section-01 .bgCard01 .menu .container .menu-nav ul {
   margin-left: 80px;
   display: flex;
   list-style: none;
 }
 
-.section-01 .bg-card-01 .menu .container .menu-nav ul li a {
+.section-01 .bgCard01 .menu .container .menu-nav ul li a {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
@@ -84,6 +90,11 @@ body {
   letter-spacing: 8px;
 }
 
+.section-01 .bg-card-02 .button-shop-now a:hover {
+  color: hsl(0, 0%, 63%);
+  transition: all .3s ease;
+}
+
 .section-01 .button-control {
   position: absolute;
   background: #000;
@@ -113,10 +124,12 @@ body {
 
 .section-01 .button-left:hover {
   background: hsl(0, 0%, 27%);
+  transition: all .3s ease;
 }
 
 .section-01 .button-right:hover {
   background: hsl(0, 0%, 27%);
+  transition: all .3s ease;
 }
 
 .section-02 {
@@ -124,7 +137,7 @@ body {
 }
 
 .section-02 .card-02 {
-  padding: 80px 40px 80px 40px;
+  padding: 70px 40px 70px 40px;
 }
 
 .section-02 .card-02 h3 {
@@ -136,4 +149,148 @@ body {
   color: hsl(0, 0%, 63%);
   line-height: 1.8em;
   margin-top: 10px;
+}
+
+
+/* Mobile Container */
+.container-mobile {
+  display: none;
+}
+.ham {
+  position: absolute;
+  z-index: 1000;
+  top: 20px;
+  left: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(../img/ham.svg);
+  background-size: 100%;
+}
+
+.showClose {
+  background-image: url(../img/ham-close.svg);
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  color: white;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding-left: 100px;
+  padding-top: 35px;
+}
+
+.navbar ul li a {
+  padding: 10px;
+  margin-left: 5px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+}
+
+.showNav {
+  transform: translateY(0);
+}
+/* ----------------------- */
+
+
+
+@media screen and (max-width: 1290px) {
+  .section-02 .card-02 {
+    padding: 50px 25px 0px 25px;
+  }
+}
+
+
+@media screen and (max-width: 1215px) {
+  .view-port {
+    height: auto;
+    width: 100%;
+  }
+  .bgCard01 {
+    width: 100%;
+  }
+  .section-01 .bg-card-02 {
+    width: 100%;
+  }
+  .section-01 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section-02 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-01 .bg-card-02 {
+    padding: 40px 20px 70px 20px;
+  }
+  .section-01 .button-control {
+    position: absolute;
+    background: #000;
+    left: 80%;
+    top: 37%;
+    cursor: pointer;
+    outline: none;
+  }
+  .section-01 .bgCard01 .menu .container {
+    display: flex;
+    margin-left: 80px;
+    padding-top: 60px;
+    padding-bottom: 360px;
+  }
+  .section-02 .card-02 {
+    padding: 50px 25px 40px 25px;
+  }
+  .section-01 .button-control {
+    width: 145px;
+    position: absolute;
+    background: #000;
+    top: 23%;
+    left: 50%;
+    
+    cursor: pointer;
+    outline: none;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .section-01 .bgCard01 .menu .container .menu-nav {
+    display: none;
+  }
+  .section-01 .bgCard01 .menu .container {
+    margin: 0;
+  }
+  .section-01 .bgCard01 .menu .container a {
+    display: none;
+  }
+  .section-01 .bgCard01 .menu .container-mobile{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section-01 .button-control {
+    position: absolute;
+    background: #000;
+    top: 20.4%;
+    left: 61%;
+    cursor: pointer;
+    outline: none;
+  }
 }

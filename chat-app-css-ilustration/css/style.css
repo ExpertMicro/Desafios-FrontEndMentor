@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  background: #F5F3F7;
+}
+
+.container .main {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.container .main .center {
+  width: 420px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.container .main .center h1 {
+  color: hsl(271, 36%, 24%);
+  font-weight: 500;
+}
+
+.container .main .center p {
+  line-height: 1.6em;
+  color: hsl(270, 7%, 64%);
+}
+
+.container .main .right .svg-02 {
+  background: transparent;
+  margin-left: -79px;
+  z-index: -1000;
+}
+
+.container .main .right {
+  z-index: 100;
+}
+
+.container .main .left .svg-03 {
+  margin-top: 118px;
+}
+
+@media screen and (max-width: 1240px) {
+  .container .main .right .svg-02 {
+    margin-left: -205px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container .main .right .svg-01 {
+    margin-left: -100px;
+  }
+  .container .main .left .svg-03 {
+    margin-right: -100px;
+  }
+  .container .main .center {
+    width: 420px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+  }
+}
+
+
+@media screen and (max-width: 860px) {
+  .container .main .center {
+    width: 300px;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .container .main {
+    flex-direction: column;
+  }
+  .container .main .left .svg-03 {
+    margin-top: -500px;
+    float: right;
+  }
+  .container .main .center h1 {
+    color: hsl(271, 36%, 24%);
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container .main .right .svg-02 {
+    margin-left: -280px;
+  }
+}

@@ -1,5 +1,5 @@
 /* Estilos Gerais */
-*, h1, p, a {
+*, h1, h2, h3, h4, p, a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,8 +26,19 @@
   transition: all .3s ease;
 }
 
-/* Header + Menu navegação */
+/* Imagens de fundo para decoração */
+.bg-intro-right {
+  position: absolute;
+  right: 0;
+  top: 8%;
+}
 
+.bg-intro-left {
+  position: absolute;
+  top: 50%;
+}
+
+/* Header + Menu navegação */
 .menu {
   background: #fff;
   padding: 25px 0;
@@ -81,7 +92,7 @@
 
 .main {
   background: hsl(256, 26%, 20%);
-  height: 600px;
+  height: 580px;
 }
 
 .main .container {
@@ -128,4 +139,149 @@
   max-width: 58ch;
 }
 
+/*   Section Features   */
+.features {
+  padding-top: 280px;
+}
+
+.features .container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1440px;
+}
+
+.features .container .features-content {
+  display: flex;
+}
+
+.features .container .features-content .prices {
+  padding-left: 30px;
+}
+
+.features .container .features-content .peoples {
+  padding-left: 30px;
+}
+
+.features .container h2 {
+  font-weight: normal;
+  color: hsl(270, 9%, 17%);
+  font-family: 'DM Serif Display', serif;
+  font-size: 4em;
+  margin-bottom: 60px;
+}
+
+.features .container h2::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  border-radius: 3px;
+  margin-top: -50px;
+  background-color: hsl(273, 4%, 51%);
+  min-height: 1px;
+}
+
+.features .container .features-content h3 {
+  color: hsl(270, 9%, 17%);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.features .container .features-content p {
+  color: hsl(273, 4%, 51%);
+}
+
+.features .container .card-about {
+  background: hsl(256, 26%, 20%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  background-image: url(../img/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.features .container .card-about .card-title h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3em;
+  color: #fff;
+  font-weight: normal;
+  padding: 40px 0px 40px 60px;
+  line-height: 1em;
+}
+
+.features .container .card-btn {
+  padding-right: 100px;
+}
+
+/*  Footer  */
+.footer {
+  background: hsl(0, 0%, 98%);
+  padding-top: 60px;
+  margin-top: 120px;
+  background-image: url(../img/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
+}
+.footer .container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1440px;
+}
+
+.footer .container .footer-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(273, 4%, 51%);
+}
+
+.footer .container .footer-header .social-nav {
+  padding-bottom: 20px;
+}
+
+.footer .container .footer-header .social-nav ul {
+  display: flex;
+}
+
+.footer .container .footer-header .social-nav li + li {
+  margin-left: 20px;
+}
+
+.footer .container .footer-header .social-nav .fa-color {
+  color: hsl(273, 4%, 51%);
+}
+.footer .container .footer-header .social-nav .fa-color:hover {
+  color: hsl(256, 26%, 20%);
+  transition: all .3s ease;
+}
+
+.footer .container .footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  margin-top: 30px;
+}
+
+.footer .container .footer-nav h4 {
+  color: hsl(273, 4%, 51%);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer .container .footer-nav ul li a {
+  font-weight: 500;
+  text-transform: uppercase;
+  color:  hsl(270, 9%, 17%);
+  display: block;
+}
+
+.footer .container .footer-nav ul li + li {
+  padding-top: 10px;
+}
+
+
+.footer .container .footer-nav ul li a:hover {
+  text-decoration: underline;
+  transition: all .3s ease;
+}
 

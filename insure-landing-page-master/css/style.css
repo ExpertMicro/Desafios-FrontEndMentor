@@ -94,8 +94,7 @@
 }
 
 .ham {
-  position: absolute;
-  /* always keep ham on top of everything */
+  
   z-index: 1000;
   top: 20px;
   right: 20px;
@@ -113,23 +112,28 @@
 }
 
 .navbar {
+  z-index: 1000;
   position: absolute;
   top: 0;
   left: 0;
   background: hsl(270, 9%, 17%);
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
   overflow: hidden;
   color: white;
-  /* hide the menu above the screen by default */
   transform: translateY(-100%);
-  /* transition adds a little animation when sliding in and out the menu */
-  transition: transform 0.2s ease;
+}
+
+.img-footer-mobile img {
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  display: none;
 }
 
 .showNav {
   /* show the menu */
-  transform: translateY(0);
+  transform: translateY(70px);
 }
 
 .navbar ul {
@@ -139,17 +143,23 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  margin-top: 30px;
 }
 
 .navbar ul li a {
+  display: block;
   color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-/*.navbar ul li a:hover, .navbar ul li a:focus {
-  border-bottom: 2px solid white;
-}*/
+.btn-mobile {
+  border: 2px solid #fff;
+  padding: 7px 60px;
+}
 
 /* Main */
 
@@ -352,6 +362,11 @@
   transition: all .3s ease;
 }
 
+.attribution {
+  text-align: center;
+  padding: 10px 0;
+}
+
 
 @media screen and (max-width: 1060px) {
   .features {
@@ -447,5 +462,23 @@
     width: 80%;
     vertical-align: middle;
   }
+  .bg-intro-right {
+    display: none;
+  }
   
+  .bg-intro-left {
+    display: none;
+  }
+  .bg-intro-mobile-r {
+    background-image: url(../img/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  
+}
+
+@media screen and (max-width: 380px) {
+  .img-footer-mobile img {
+    display: block;
+  }
 }

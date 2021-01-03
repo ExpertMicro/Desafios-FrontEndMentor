@@ -1,0 +1,48 @@
+//Colors
+$Primary-Color-DarkBlue: hsl(233, 26%, 24%);
+$Primary-Color-LimeGreen: hsl(136, 65%, 51%);
+$Primary-Color-BrightCyan: hsl(192, 70%, 51%);
+
+$Neutal-Color-GrayishBlue: hsl(233, 8%, 62%);
+$Neutal-Color-LightGrayishBlue: hsl(220, 16%, 96%);
+$Neutal-Color-VeryLightGray: hsl(0, 0%, 98%);
+$Neutal-Color-White: hsl(0, 0%, 100%);
+
+//Fonte
+$font-Primary: 'Public Sans', sans-serif;
+
+//Função que converte px para em
+@function em($pixels, $contexto: 16) {
+  @return ($pixels / $contexto) * 1em;
+}
+
+//Titulos
+@mixin title-large {
+  font-size: em(24);
+  font-weight: 700;
+  font-family: $font-Primary;
+  line-height: 1;
+  color: $Primary-Color-DarkBlue;
+}
+
+@mixin title-medium {
+  font-size: 2em;
+  font-weight: 500;
+  font-family: $font-Primary;
+  line-height: 1;
+  color: $Primary-Color-DarkBlue;
+}
+
+@mixin title-small {
+  font-size: 1em;
+  font-weight: 400;
+  font-family: $font-Primary;
+  line-height: 1;
+  color: $Primary-Color-DarkBlue;
+}
+
+@mixin border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}

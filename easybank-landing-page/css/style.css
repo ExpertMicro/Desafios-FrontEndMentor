@@ -628,146 +628,138 @@ textarea {
   box-sizing: border-box;
 }
 
-.grid-1 {
-  width: calc(8.33333% - 20px);
-}
-
-.grid-2 {
-  width: calc(16.66667% - 20px);
-}
-
-.grid-3 {
-  width: calc(25% - 20px);
-}
-
-.grid-4 {
-  width: calc(33.33333% - 20px);
-}
-
-.grid-5 {
-  width: calc(41.66667% - 20px);
-}
-
-.grid-6 {
-  width: calc(50% - 20px);
-}
-
-.grid-7 {
-  width: calc(58.33333% - 20px);
-}
-
-.grid-8 {
-  width: calc(66.66667% - 20px);
-}
-
-.grid-9 {
-  width: calc(75% - 20px);
-}
-
-.grid-10 {
-  width: calc(83.33333% - 20px);
-}
-
-.grid-11 {
-  width: calc(91.66667% - 20px);
-}
-
-.grid-12 {
-  width: calc(100% - 20px);
-}
-
-[class^="grid-"] {
-  float: left;
-  min-height: 1px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 759px) {
-  [class^="grid-"] {
-    width: 100%;
-    float: none;
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.grid-1 {
-  margin-left: calc(8.33333% + 10px);
-}
-
-.grid-2 {
-  margin-left: calc(16.66667% + 10px);
-}
-
-.grid-3 {
-  margin-left: calc(25% + 10px);
-}
-
-.grid-4 {
-  margin-left: calc(33.33333% + 10px);
-}
-
-.grid-5 {
-  margin-left: calc(41.66667% + 10px);
-}
-
-.grid-6 {
-  margin-left: calc(50% + 10px);
-}
-
-.grid-7 {
-  margin-left: calc(58.33333% + 10px);
-}
-
-.grid-8 {
-  margin-left: calc(66.66667% + 10px);
-}
-
-.grid-9 {
-  margin-left: calc(75% + 10px);
-}
-
-.grid-10 {
-  margin-left: calc(83.33333% + 10px);
-}
-
-.grid-11 {
-  margin-left: calc(91.66667% + 10px);
-}
-
-.grid-12 {
-  margin-left: calc(100% + 10px);
-}
-
-@media screen and (max-width: 759px) {
-  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
-    margin-left: 0;
-  }
-}
-
 .container {
-  max-width: 1200px;
+  display: flex;
+  max-width: 1440px;
+  width: 80%;
   margin: 0 auto;
-  position: relative;
 }
 
-@media screen and (min-width: 760px) and (max-width: 1199px) {
-  .container {
-    max-width: 760px;
-  }
+body {
+  background: white;
 }
 
-@media screen and (max-width: 759px) {
-  .container {
-    max-width: 480px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.title-large {
+  font-size: 3em;
+  font-weight: 400;
+  font-family: "Public Sans", sans-serif;
+  line-height: 1;
+  color: #2d314d;
 }
 
-.container::after, .container::before {
-  content: '';
-  display: table;
-  clear: both;
+.title-medium {
+  font-size: 2.125em;
+  font-weight: 500;
+  font-family: "Public Sans", sans-serif;
+  line-height: 1;
+  color: #2d314d;
+  padding-top: 100px;
+}
+
+.title-small {
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Public Sans", sans-serif;
+  line-height: 1;
+  color: #2d314d;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.title-very-small {
+  font-size: 0.75em;
+  font-weight: normal;
+  font-family: "Public Sans", sans-serif;
+  line-height: 1;
+  color: #2d314d;
+}
+
+.text-medium {
+  font-family: "Public Sans", sans-serif;
+  color: #9698a6;
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 30, 18;
+  margin-top: 20px;
+}
+
+.text-small {
+  font-family: "Public Sans", sans-serif;
+  color: #9698a6;
+  font-weight: normal;
+  font-size: 0.875em;
+  line-height: 30, 18;
+}
+
+.menu {
+  padding: 30px 0;
+}
+
+.menu-nav {
+  flex: 1;
+}
+
+.menu-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-nav ul li a {
+  font-size: 1.125em;
+  font-family: "Public Sans", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  color: #9698a6;
+  padding: 10px;
+}
+
+.menu-nav ul li + li {
+  margin-left: 15px;
+}
+
+.button {
+  font-size: 1.125em;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  box-shadow: 0 0 1px 0px white inset, 0 0 1px 0px white;
+}
+
+.button:hover {
+  opacity: 0.7;
+  transition: all .3s ease;
+}
+
+.main {
+  background: #fafafa;
+  background-image: url(../img/bg-intro-desktop-5.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.main-title {
+  padding-top: 200px;
+  padding-bottom: 270px;
+}
+
+.section-services {
+  background: #f3f4f6;
+}
+
+.container-services {
+  display: flex;
+  margin-top: 60px;
+}
+
+.service-02, .service-03 {
+  padding-left: 20px;
+  padding-right: 20px;
 }

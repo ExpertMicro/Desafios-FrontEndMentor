@@ -629,7 +629,6 @@ textarea {
 }
 
 .container {
-  display: flex;
   max-width: 1440px;
   width: 80%;
   margin: 0 auto;
@@ -648,8 +647,8 @@ body {
 }
 
 .title-medium {
-  font-size: 2.125em;
-  font-weight: 500;
+  font-size: 2.5em;
+  font-weight: 400;
   font-family: "Public Sans", sans-serif;
   line-height: 1;
   color: #2d314d;
@@ -658,20 +657,21 @@ body {
 
 .title-small {
   font-size: 1.5em;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Public Sans", sans-serif;
   line-height: 1;
   color: #2d314d;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 35px;
 }
 
 .title-very-small {
-  font-size: 0.75em;
-  font-weight: normal;
+  font-size: 1.125em;
+  font-weight: 400;
   font-family: "Public Sans", sans-serif;
   line-height: 1;
   color: #2d314d;
+  margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 .text-medium {
@@ -679,7 +679,7 @@ body {
   color: #9698a6;
   font-weight: normal;
   font-size: 1.125em;
-  line-height: 30, 18;
+  line-height: 1.5em;
   margin-top: 20px;
 }
 
@@ -687,12 +687,16 @@ body {
   font-family: "Public Sans", sans-serif;
   color: #9698a6;
   font-weight: normal;
-  font-size: 0.875em;
-  line-height: 30, 18;
+  font-size: 0.75em;
+  line-height: 1.33333em;
 }
 
 .menu {
   padding: 30px 0;
+}
+
+.menu .container {
+  display: flex;
 }
 
 .menu-nav {
@@ -705,7 +709,7 @@ body {
 }
 
 .menu-nav ul li a {
-  font-size: 1.125em;
+  font-size: 0.875em;
   font-family: "Public Sans", sans-serif;
   font-weight: normal;
   text-decoration: none;
@@ -720,7 +724,7 @@ body {
 .button {
   font-size: 1.125em;
   font-family: "Public Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   padding: 10px 25px;
   border-radius: 50px;
@@ -739,10 +743,10 @@ body {
 
 .main {
   background: #fafafa;
-  background-image: url(../img/bg-intro-desktop-5.svg);
+  /*background-image: url(../img/bg-intro-desktop-5.svg);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size:contain;*/
 }
 
 .main-title {
@@ -756,10 +760,98 @@ body {
 
 .container-services {
   display: flex;
-  margin-top: 60px;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding-bottom: 100px;
 }
 
 .service-02, .service-03 {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.section-articles {
+  background: #fafafa;
+}
+
+.container-articles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.article::nth-child(2) {
+  margin-right: 20px;
+}
+
+.author-name {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.75em;
+  font-weight: normal;
+  color: #9698a6;
+}
+
+.body-article {
+  background: #fff;
+  position: relative;
+  padding-top: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  width: 255px;
+}
+
+.footer {
+  background: #2d314d;
+}
+
+.container-footer {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 45px;
+  justify-content: space-between;
+}
+
+.footer-social-icons {
+  margin-top: 60px;
+}
+
+.footer-social-icons ul {
+  display: flex;
+}
+
+.footer-social-icons li + li {
+  margin-left: 13px;
+}
+
+.footer-nav {
+  display: flex;
+  flex: 1;
+}
+
+.footer-nav ul {
+  margin-left: 130px;
+}
+
+.footer-nav li + li {
+  margin-top: 20px;
+}
+
+.footer-nav ul li a {
+  font-size: 0.875em;
+  font-family: "Public Sans", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  color: #9698a6;
+  color: #fff;
+}
+
+.footer-button {
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+
+.copy {
+  font-family: "Public Sans", sans-serif;
+  font-size: 0.75em;
+  color: #9698a6;
 }

@@ -16,6 +16,7 @@ $font-Primary: 'Public Sans', sans-serif;
   @return $pixels / $contexto + em;
 }
 
+//400 normal(regular) 500 medium 600 semi-bold 700 bold
 //Titulos
 @mixin title-large {
   font-size: em(48);
@@ -26,8 +27,8 @@ $font-Primary: 'Public Sans', sans-serif;
 }
 
 @mixin title-medium {
-  font-size: em(34);
-  font-weight: 500;
+  font-size: em(40);
+  font-weight: 400;
   font-family: $font-Primary;
   line-height: 1;
   color: $Primary-Color-DarkBlue;
@@ -35,15 +36,15 @@ $font-Primary: 'Public Sans', sans-serif;
 
 @mixin title-small {
   font-size: em(24);
-  font-weight: 500;
+  font-weight: 400;
   font-family: $font-Primary;
   line-height: 1;
   color: $Primary-Color-DarkBlue;
 }
 
 @mixin title-very-small {
-  font-size: em(12);
-  font-weight: normal;
+  font-size: em(18);
+  font-weight: 400;
   font-family: $font-Primary;
   line-height: 1;
   color: $Primary-Color-DarkBlue;
@@ -55,20 +56,20 @@ $font-Primary: 'Public Sans', sans-serif;
   color: $Neutal-Color-GrayishBlue;
   font-weight: normal;
   font-size: em(18);
-  line-height: (30, 18);
+  line-height: em(27, 18);
 }
 
 @mixin text-small {
   font-family: $font-Primary;
   color: $Neutal-Color-GrayishBlue;
   font-weight: normal;
-  font-size: em(14);
-  line-height: (30, 18);
+  font-size: em(12);
+  line-height: em(16, 12);
 }
 
 //links
 @mixin link {
-  font-size: em(18);
+  font-size: em(14);
   font-family: $font-Primary;
   font-weight: normal;
   text-decoration: none;
@@ -79,7 +80,7 @@ $font-Primary: 'Public Sans', sans-serif;
 @mixin btn {
   font-size: em(18);
   font-family: $font-Primary;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   padding: 10px 25px;
   border-radius: 50px;

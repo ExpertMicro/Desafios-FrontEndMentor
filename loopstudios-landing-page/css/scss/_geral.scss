@@ -73,3 +73,37 @@ body {
   border: 2px solid $White;
   padding: 30px;
 }
+
+//Section intro
+
+.section-image {
+  padding: 120px 0;
+}
+
+.section-product {
+  background: $White;
+  position: absolute;
+  top: 880px;
+  left: 50%;
+}
+
+.section-product-content {
+  padding: 100px;
+  width: 635px;
+}
+
+.section-product-content h2 {
+  font-size: 49px;
+  color: $Black;
+  font-family: $Font-secondary;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-product-content p {
+  font-size: 15px;
+  font-family: $Font-primary;
+  color: $Dark-gray;
+  line-height: 27px;
+}

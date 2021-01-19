@@ -480,3 +480,35 @@ body {
   border: 2px solid #fff;
   padding: 30px;
 }
+
+.section-image {
+  padding: 120px 0;
+}
+
+.section-product {
+  background: #fff;
+  position: absolute;
+  top: 880px;
+  left: 50%;
+}
+
+.section-product-content {
+  padding: 100px;
+  width: 635px;
+}
+
+.section-product-content h2 {
+  font-size: 49px;
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-product-content p {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+  color: #8c8c8c;
+  line-height: 27px;
+}

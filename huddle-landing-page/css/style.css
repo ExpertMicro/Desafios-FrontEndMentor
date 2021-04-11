@@ -1,0 +1,24 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color-1 : #ff52bf;
+  --primary-color-2 : #00252E;
+  --secondary-color-1 : #EBFBFF;
+  --secodary-color-2 : #808D99;
+}
+
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+

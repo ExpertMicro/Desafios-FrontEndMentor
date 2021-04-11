@@ -107,3 +107,30 @@ body {
   color: $Dark-gray;
   line-height: 27px;
 }
+
+//Sessão do Creators
+.creators-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.creators-title h2 {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-family: $Font-secondary;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: $Font-primary;
+  text-decoration: none;
+  color: #000;
+  text-decoration: none;
+  border: 1px solid;
+  letter-spacing: 3px;
+  padding: 10px 25px 10px 25px;
+}
+

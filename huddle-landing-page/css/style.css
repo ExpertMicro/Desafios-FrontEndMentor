@@ -259,12 +259,13 @@ button {
 
 .footer-social ul {
   display: flex;
+  list-style: none;
 }
 
-.footer-social ul li {
-  width: 34px;
-  height: 34px;
-  list-style: none;
+.footer-social ul li a {
+  display: block;
+  width: 33px;
+  height: 33px;
   border: solid 1px #fff;
   border-radius: 50%;
 }
@@ -275,13 +276,19 @@ button {
 
 .footer-social svg {
   margin-top: 7px;
-  margin-left: 7px;
+  margin-left: 6px;
   width: 18px;
   height: 18px;
 }
 
 .footer-social ul li svg {
   color: #fff;
+}
+
+.footer-social ul li a:hover {
+  border: solid 1px var(--primary-color-1);
+  border-radius: 50%;
+  color: var(--primary-color-1);
 }
 
 .footer-social ul li svg:hover {

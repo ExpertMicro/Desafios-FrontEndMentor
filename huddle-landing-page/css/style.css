@@ -127,7 +127,7 @@ button {
 }
 
 .post-content {
-  width: 450px;
+  max-width: 450px;
 }
 
 .post-content h2 {
@@ -291,4 +291,14 @@ button {
 .copy p {
   color: #fff;
   margin-top: 100px;
+}
+
+.attribution {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.attribution a {
+  color:#fff;
 }

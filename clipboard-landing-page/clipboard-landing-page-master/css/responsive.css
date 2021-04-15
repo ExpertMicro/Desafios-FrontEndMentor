@@ -1,0 +1,40 @@
+/* for-phone-only */
+@media (max-width: 599px) {
+
+}
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) {
+ 
+}
+
+/* for-tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+
+}
+
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+ 
+}
+/* for-tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+}
+
+/* for-desktop-up */
+@media (min-width: 1200px) {
+  
+}
+
+/* for-desktop-only */
+@media (min-width: 1200px) and (max-width: 1799px) {
+  
+}
+
+
+/* for-big-desktop-up */
+@media (min-width: 1800px) {
+  
+}

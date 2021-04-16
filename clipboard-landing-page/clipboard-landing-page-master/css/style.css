@@ -13,6 +13,7 @@
   --primary-color-02: #6173FF;
   --secondary-color-01: #4C545D;
   --secondary-color-02: #9FABB2;
+  --secondary-color-03: #F5F6F8;
 }
 
 
@@ -44,6 +45,19 @@
   background: var(--primary-color-02);
   cursor: pointer;
   margin-left: 10px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-ios:hover {
+  opacity: 0.8;
+}
+
+.btn-mac:hover {
+  opacity: 0.8;
 }
 
 .container {
@@ -110,12 +124,13 @@ margin-top: 140px;
 }
 
 .img-snippets {
-  margin-left: -125px;
+  margin-left: -135px;
 }
 
 .list-snippets {
   margin-top: 30px;
-  margin-left: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .list-snippets ul {
@@ -223,6 +238,11 @@ margin-top: 140px;
   margin: 0 auto;
 }
 
+.buttons-call {
+  display: flex;
+  justify-content: center;
+}
+
 .call h3 {
   font-size: 36px;
   color: var(--secondary-color-01);
@@ -241,11 +261,13 @@ margin-top: 140px;
 
 .footer {
   margin-top: 140px;
-  background: var(--secondary-color-02);
+  background: var(--secondary-color-03);
 }
 
 
 .footer-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -254,11 +276,73 @@ margin-top: 140px;
   width: 40px;
 }
 
-.footer-list ul {
+.footer-list {
   display: flex;
   justify-content: space-between;
 }
 
+.footer-list .list-02 {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.footer-list .list-01 li:last-child{
+  margin-top: 15px;
+}
+
+.footer-list .list-02 li:last-child{
+  margin-top: 15px;
+}
+
+.footer-list ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--secondary-color-01);
+}
+
+.footer-list ul li a:hover {
+  color: var(--primary-color-01);
+}
+
+
+
+
 .social-list ul {
   display: flex;
+}
+
+.social-list li + li{
+  margin-left: 15px;
+}
+
+.social-list ul li a {
+  display: block;
+}
+
+.social-list .icon-facebook {
+  fill: var(--secondary-color-01);
+}
+
+.social-list .icon-twitter {
+  fill: var(--secondary-color-01);
+}
+
+.social-list .icon-instagram {
+  fill: var(--secondary-color-01);
+}
+
+.social-list .icon-facebook:hover {
+  fill: var(--primary-color-01);
+}
+
+.social-list .icon-twitter:hover {
+  fill: var(--primary-color-01);
+}
+
+.social-list .icon-instagram:hover {
+  fill: var(--primary-color-01);
+}
+
+.attribution {
+  padding-bottom: 10px;
 }

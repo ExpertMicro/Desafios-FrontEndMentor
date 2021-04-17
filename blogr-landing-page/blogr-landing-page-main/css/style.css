@@ -1,0 +1,149 @@
+*, *:after, *:before {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color-01: #FF525D;
+  --primary-color-02: #FF7A85;
+  --primary-color-03: #1F3F5B;
+
+  --secondary-color-01: #fff;
+  --secondary-color-02: #C8C8CB;
+  --secondary-color-03: #4B5862;
+  --secondary-color-04: #25252D;
+
+  --gradient-color-01: #FF8F70;
+  --gradient-color-02: #FF3D54;
+  --gradient-color-03: #2C2D3F;
+  --gradient-color-04: #3F4164;
+
+}
+
+
+.btn {
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color-01);
+  text-decoration: none;
+  padding-top: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 14px;
+  background: #fff;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.menu-nav .btn-signup {
+  color: var(--primary-color-01);
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 50px;
+}
+
+.button-learn-more .btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+.intro-bg {
+  background: url(../img/bg-pattern-intro.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--primary-color-01);
+  border-bottom-left-radius: 100px;
+}
+
+.header {
+ padding-top: 60px;
+}
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.intro-navigation {
+  display: flex;
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-self: center;
+}
+
+.menu-nav ul {
+  display: flex;
+}
+
+.menu-nav ul li {
+  list-style: none;
+}
+
+.menu-nav ul li a {
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.menu-nav li + li {
+  margin-left: 60px;
+}
+
+.menu-nav li:first-child {
+  margin-left: 100px;
+}
+
+.menu-nav li:last-child {
+  margin-left: 30px;
+}
+
+.intro-title {
+  padding-top: 120px;
+}
+
+.intro-title h1 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 48px;
+  color: #fff;
+  text-align: center;
+}
+
+.intro-title p {
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.intro-buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 180px;
+}
+
+.button-start {
+  margin-right: 20px;
+}

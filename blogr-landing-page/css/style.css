@@ -40,6 +40,11 @@
   text-align: center;
 }
 
+.button-start .btn:hover {
+  background: var(--primary-color-02);
+  color: #fff;
+}
+
 .menu-nav .btn-signup {
   color: var(--primary-color-01);
   background: #fff;
@@ -50,17 +55,28 @@
   border-radius: 50px;
 }
 
+
+.menu-nav .btn-signup:hover {
+  background: var(--primary-color-02);
+  color: #fff;
+}
+
 .button-learn-more .btn {
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
 }
 
+.button-learn-more .btn:hover {
+  background: #fff;
+  color: var(--primary-color-01);
+}
+
 /* font-family: 'Overpass', sans-serif;
 font-family: 'Ubuntu', sans-serif; */
 
 .intro-bg {
-  background: url(../img/bg-pattern-intro.svg);
+  background: url(../img/bg-pattern-intro.svg),linear-gradient(90deg, var(--gradient-color-01) 20%, var(--gradient-color-02) 60%);
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--primary-color-01);
@@ -195,7 +211,7 @@ font-family: 'Ubuntu', sans-serif; */
 
 /* Section Infrastructure */
 .infrastructure {
-  background: #2C2D3F;
+  background: linear-gradient(90deg, hsl(237, 17%, 21%) 30%, hsl(237, 23%, 32%) 60%);
   height: 410px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 100px;
@@ -233,4 +249,93 @@ font-family: 'Ubuntu', sans-serif; */
   color: #fff;
   margin-top: 20px;
   line-height: 30px;
+}
+
+
+/* Section Usability */
+.usability {
+  margin-top: 200px;
+}
+
+.usability-features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-usability img {
+  width: 640px;
+}
+
+.usability-content {
+  max-width: 500px;
+}
+
+.usability-features .free h3 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 24px;
+  color: var(--primary-color-03);
+}
+
+.usability-features .free p {
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  color: var(--secondary-color-03);
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.usability-features .powerfull h3 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 24px;
+  color: var(--primary-color-03);
+  margin-top: 60px;
+}
+
+.usability-features .powerfull p {
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  color: var(--secondary-color-03);
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+
+/* Footer */
+.footer {
+  background: var(--secondary-color-04);
+  margin-top: 60px;
+  border-top-right-radius: 100px;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-nav ul li {
+  list-style: none;
+}
+
+.footer-nav ul li h4 {
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.footer-nav li + li {
+  margin-bottom: 20px;
+}
+
+.footer-nav ul li a {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline;
 }

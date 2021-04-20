@@ -25,13 +25,40 @@
         <nav class="menu-nav">
           <ul>
             <li>
-              <a href="#">Product</a>
+              <div class="dropdown">
+                <a onclick="myFunctionProduct()" class="dropbtn" href="#">Product</a>
+                <div class="dropdown-content">
+                  <a href="">Overview</a>
+                  <a href="">Pricing</a>
+                  <a href="">Marketplace</a>
+                  <a href="">Features</a>
+                  <a href="">Integrations</a>
+                </div>
+              </div>
+              
             </li>
+
             <li>
-              <a href="#">Company</a>
+              <div class="dropdown">
+                <a onclick="myFunctionCompany()" class="dropbtn" href="#">Company</a>
+                <div id="myDropdown02" class="dropdown-content">
+                  <a href="">About</a>
+                  <a href="">Team</a>
+                  <a href="">Blog</a>
+                  <a href="">Careers</a>
+                </div>
+              </div>
             </li>
+
             <li>
-              <a href="#">Connect</a>
+              <div class="dropdown">
+                <a onclick="myFunctionConnect()" class="dropbtn" href="#">Connect</a>
+                <div id="myDropdown03" class="dropdown-content">
+                  <a href="">Contact</a>
+                  <a href="">Newsletter</a>
+                  <a href="">Linkedin</a>
+                </div>
+              </div>
             </li>
           </ul>
 
@@ -191,6 +218,9 @@
       </div>
     </div>
   </footer>
+
+  <script src="/js/jquery-3.6.0.slim.min.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 </html>
 

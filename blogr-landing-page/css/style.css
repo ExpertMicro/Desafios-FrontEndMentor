@@ -249,6 +249,8 @@ font-family: 'Ubuntu', sans-serif; */
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   max-width: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .navigation-list li {
@@ -310,11 +312,11 @@ font-family: 'Ubuntu', sans-serif; */
   margin-top: 40px;
 }
 
-.section-design-img {
+/*.section-design-img {
   background: url(../img/illustration-editor-desktop.svg);
   background-repeat: no-repeat;
   background-position: top right -270px;
-}
+}*/
 
 
 .section-design h2 {
@@ -326,8 +328,16 @@ font-family: 'Ubuntu', sans-serif; */
 }
 
 .features {
-  max-width: 600px;
+  display: flex;
+  align-self: center;
+  align-items: center;
   padding-bottom: 300px;
+  justify-content: space-between;
+}
+
+.features .features-content {
+  max-width: 560px;
+  margin-right: 20px;
 }
 
 .features .features-content h3 {
@@ -346,6 +356,10 @@ font-family: 'Ubuntu', sans-serif; */
 
 .features-02 {
   margin-top: 40px;
+}
+
+.features-img img {
+  width: 600px;
 }
 
 /* Section Infrastructure */

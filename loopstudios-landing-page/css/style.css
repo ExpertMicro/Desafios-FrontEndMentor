@@ -114,3 +114,122 @@ img {
   line-height: 28px;
   margin-top: 20px;
 }
+
+
+/*  Section Creations  */
+.section-creations {
+  margin-top: 160px;
+}
+
+.main-creations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-creations h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.btn {
+  color: var(--primary-color-02);
+  font-family: 'Alata', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: var(--primary-color-01);
+  border: 1px solid var(--primary-color-02);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.btn:hover {
+  background: var(--primary-color-02);
+  color: var(--primary-color-01);
+}
+
+.gallery-creations {
+  margin-top: 60px;
+}
+
+
+.gallery-creations .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.gallery-creations .row .img-01, .img-02, .img-03 {
+  margin-right: 30px;
+}
+
+.gallery-creations .row .img-05, .img-06, .img-07 {
+  margin-right: 30px;
+}
+
+.card-item {
+  position: relative;
+  cursor: pointer;
+}
+
+
+.creations-card-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: absolute;
+  color: var(--primary-color-01);
+  bottom: 30px;
+  left: 35px;
+  max-width: 170px;
+}
+
+/*  Footer  */
+.footer {
+  margin-top: 120px;
+  background: #000;
+}
+
+.footer-head {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-footer ul {
+  display: flex;
+}
+
+.social-footer li + li {
+  margin-left: 15px;
+}
+
+.footer-nav-copy {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.footer-nav ul {
+  display: flex;
+}
+
+.footer-nav ul li a {
+  color: var(--primary-color-01);
+  font-family: 'Alata', sans-serif;
+}
+
+.footer-nav li + li {
+  margin-left: 30px;
+}
+
+.copy p {
+  color: var(--primary-color-03);
+  font-family: 'Alata', sans-serif;
+}

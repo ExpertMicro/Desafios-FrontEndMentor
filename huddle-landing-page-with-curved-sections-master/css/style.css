@@ -23,17 +23,12 @@ img {
   margin: 0 auto;
 }
 
-/*
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-*/
-
 .btn {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.125em;
-  color: var(--primary-color-02);
+  color: var(--primary-color-01);
   text-decoration: none;
-  border: 1px solid var(--primary-color-02);
+  border: 1px solid var(--primary-color-01);
   border-radius: 20px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -48,6 +43,11 @@ font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.button .btn:hover {
+  border-color: var(--primary-color-02);
+  color: var(--primary-color-02);
 }
 
 .intro {
@@ -70,6 +70,23 @@ font-family: 'Poppins', sans-serif;
   margin: 0 auto;
   margin-bottom: 40px;
   line-height: 1.75em;
+}
+
+.intro .btn {
+  color: #fff;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-weight: 600;
+  border-radius: 30px;
+  border: none;
+  background: var(--primary-color-01);
+  box-shadow:0 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
+
+.intro .btn:hover {
+  background: var(--primary-color-02);
 }
 
 .intro-img  img {
@@ -114,7 +131,24 @@ font-family: 'Poppins', sans-serif;
 /*  Section  Grow */
 .row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.card-bg-desktop {
+  width: 100%;
+}
+
+.card-bg-mobile {
+  display: none;
+}
+
+.grow {
+  padding-right: 20px;
+}
+
+.bg-color {
+  background: var(--secondary-color-02);
 }
 
 .grow h2 {
@@ -129,14 +163,19 @@ font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   color: var(--secondary-color-01);
   line-height: 1.75em;
+  max-width: 550px;
 }
 
 .grow-img img {
-  max-width: 420px;
+  max-width: 590px;
 }
 
 
 /*  Section Conversation */
+.conversation {
+  padding-left: 20px;
+}
+
 .conversation-img img {
   width: 420px;
 }
@@ -153,9 +192,14 @@ font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   color: var(--secondary-color-01);
   line-height: 1.75em;
+  max-width: 590px;
 }
 
 /*  Section Users  */
+.users {
+  padding-right: 20px;
+}
+
 .users h2 {
   font-size: 2.25em;
   font-family: 'Poppins', sans-serif;
@@ -168,6 +212,8 @@ font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   color: var(--secondary-color-01);
   line-height: 1.75em;
+  max-width: 590px;
+
 }
 
 .users-img img {
@@ -177,6 +223,8 @@ font-family: 'Poppins', sans-serif;
 
 .call {
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .call h3 {
@@ -195,6 +243,7 @@ font-family: 'Poppins', sans-serif;
   padding-left: 60px;
   padding-right: 60px;
   border-radius: 30px;
+  border: none;
 }
 
 .call .btn:hover {

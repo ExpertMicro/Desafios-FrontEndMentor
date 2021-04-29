@@ -99,6 +99,7 @@ img {
 .views {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 80px;
 }
 
 .communities {
@@ -133,6 +134,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .card-bg-desktop {
@@ -167,11 +170,22 @@ img {
 }
 
 .grow-img img {
-  max-width: 590px;
+  max-width: 420px;
 }
 
 
 /*  Section Conversation */
+.row-conversations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flowing-conversations {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .conversation {
   padding-left: 20px;
 }
@@ -254,12 +268,23 @@ img {
 /*  Footer */
 .footer {
   background: var(--secondary-color-01);
+  padding-top: 30px;
+}
+
+.card-bg-desktop-footer {
+  width: 100%;
+  margin-bottom: -2px;
+}
+
+.card-bg-mobile-footer {
+  display: none;
 }
 
 .footer-content {
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 .p-address p {
@@ -315,6 +340,14 @@ img {
   width: 25px;
   height: 25px;
   list-style: none;
+}
+
+.footer-social .svg-inline--fa {
+  fill: #fff;
+}
+
+.footer-social .svg-inline--fa:hover {
+  fill: #009AFA;
 }
 
 

@@ -1,0 +1,148 @@
+/* for-phone-only */
+@media (max-width: 599px) {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  .header .logo img {
+    width: 140px;
+  }
+  .intro {
+    margin-top: 150px;
+  }
+  .views {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .row-conversations {
+    flex-direction: column;
+    text-align: center;
+  }
+  .grow {
+    padding-right: 0;
+  }
+  .grow-img img {
+    display: block;
+    max-width: 100%;
+  }
+  .grow h2 {
+    margin-top: 60px;
+  }
+  .conversation h2 {
+    margin-top: 60px;
+  }
+  .conversation {
+    padding-left: 0;
+  }
+  .users {
+    padding-bottom: 40px;
+  }
+  .users h2 {
+    margin-top: 60px;
+  }
+  .footer-content {
+    flex-direction: column-reverse;
+  }
+  .footer-logo {
+    margin-top: 60px;
+  }
+  .newsletter {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .newsletter-input {
+    width: 100%;
+  }
+  .newsletter-btn {
+    margin-top: 10px;
+  }
+  .footer-newsletter .btn {
+    margin-left: 0;
+  }
+}
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) {
+ 
+}
+
+/* for-tablet-portait-only */
+@media (min-width: 600px) and (max-width: 899px) {
+  .intro {
+    margin-top: 150px;
+  }
+  .views {
+    justify-content: space-between;
+  }
+  .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .row-conversations {
+    flex-direction: column;
+    text-align: center;
+  }
+  .grow {
+    padding-right: 0;
+  }
+  .grow h2 {
+    margin-top: 60px;
+  }
+  .conversation h2 {
+    margin-top: 60px;
+  }
+  .conversation {
+    padding-left: 0;
+  }
+  .users {
+    padding-bottom: 40px;
+  }
+  .users h2 {
+    margin-top: 60px;
+  }
+  .footer-content {
+    flex-direction: column-reverse;
+  }
+  .footer-logo {
+    margin-top: 60px;
+  }
+}
+
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+ 
+}
+/* for-tablet-landscape-only */
+@media (min-width: 900px) and (max-width: 1199px) {
+
+}
+
+/* for-desktop-up */
+@media (min-width: 1200px) {
+  
+}
+
+/* for-desktop-only */
+@media (min-width: 1200px) and (max-width: 1799px) {
+  
+}
+
+
+/* for-big-desktop-up */
+@media (min-width: 1800px) {
+  
+}
+
+
+@media (max-width: 1300px) {
+  .intro-img img {
+    display: block;
+    max-width: 100%;
+  }
+}

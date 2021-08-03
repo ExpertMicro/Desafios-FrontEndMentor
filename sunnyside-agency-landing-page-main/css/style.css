@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 18px;
 }
 
 img {
@@ -24,11 +25,78 @@ img {
 
 .container {
   max-width: 1440px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .intro-bg {
   background: url(../img/desktop/image-header.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.menu-nav ul li {
+  list-style: none;
+}
+
+.menu-nav ul li a {
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--secondary-color-white);
+  font-family: 'Barlow', sans-serif;
+}
+
+.menu-nav li + li {
+  margin-left: 30px;
+}
+
+.menu-nav ul {
+  display: flex;
+}
+
+.title-intro h1 {
+  font-family: 'Fraunces', sans-serif;
+  color: var(--secondary-color-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 240px;
+}
+
+.card-01 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img-egg img {
+  max-width: 100%;
+}
+
+.card-description h2 {
+  font-weight: 900;
+  font-family: 'Fraunces', sans-serif;
+  font-size: 36px;
+  color: var(--secondary-color-dark-blue);
+}
+
+.card-description p {
+  color: var(--secondary-color-gray02);
+  font-family: 'Barlow', sans-serif;
+}
+
+

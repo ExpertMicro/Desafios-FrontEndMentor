@@ -1,0 +1,34 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --primary-color-orange: hsl(7, 99%, 70%);
+  --primary-color-yellow: hsl(51, 100%, 49%);
+  --primary-color-dark-cyan: hsl(167, 40%, 24%);
+  --primary-color-blue: hsl(198, 62%, 26%);
+  --primary-color-cyan: hsl(168, 34%, 41%);
+
+  --secondary-color-dark-blue: hsl(212, 27%, 19%);
+  --secondary-color-gray01: hsl(213, 9%, 39%);
+  --secondary-color-gray02: hsl(232, 10%, 55%);
+  --secondary-color-gray03: hsl(210, 4%, 67%);
+  --secondary-color-white: hsl(0, 0%, 100%);
+}
+
+.container {
+  max-width: 1440px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.intro-bg {
+  background: url(../img/desktop/image-header.jpg);
+  background-size: cover;
+}

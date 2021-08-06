@@ -79,12 +79,18 @@ img {
 }
 
 .card-01 {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .img-egg img {
-  max-width: 100%;
+  width: 100%;
+}
+
+.card-content {
+  max-width: 640px;
+  padding-left: 140px;
 }
 
 .card-description h2 {
@@ -95,8 +101,82 @@ img {
 }
 
 .card-description p {
+  margin-top: 20px;
+  padding-right: 80px;
   color: var(--secondary-color-gray02);
   font-family: 'Barlow', sans-serif;
 }
 
+.card-description a {
+  font-family: 'Fraunces', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--secondary-color-dark-blue);
+  display: block;
+  margin-top: 20px;
+}
 
+.card-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skill-01 {
+  background: url(../img/desktop/image-graphic-design.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.skill-02 {
+  background: url(../img/desktop/image-photography.jpg);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  height: auto;
+}
+
+.skill-01 h3 {
+  font-size: 30px;
+  font-family: 'Fraunces', sans-serif;
+  text-align: center;
+  color: var(--primary-color-dark-cyan);
+  font-weight: 900;
+  padding-top: 380px;
+  margin-bottom: 20px;
+}
+
+.skill-02 h3 {
+  font-size: 30px;
+  font-family: 'Fraunces', sans-serif;
+  text-align: center;
+  color: var(--primary-color-dark-cyan);
+  font-weight: 900;
+  padding-top: 380px;
+  margin-bottom: 20px;
+}
+
+.skill-01 p {
+  font-family: 'Barlow', sans-serif;
+  color: var(--primary-color-dark-cyan);
+  text-align: center;
+  max-width: 360px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.skill-02 p {
+  font-family: 'Barlow', sans-serif;
+  text-align: center;
+  max-width: 360px;
+  margin: 0 auto;
+  color: var(--primary-color-dark-cyan);
+}
+
+.skill-02 h3 {
+  font-size: 30px;
+  font-family: 'Fraunces', sans-serif;
+  text-align: center;
+  color: var(--primary-color-dark-cyan);
+  font-weight: 900;
+}

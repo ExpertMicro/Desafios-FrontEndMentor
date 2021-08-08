@@ -200,6 +200,7 @@ img {
   align-items: center;
   align-content: center;
   padding-top: 60px;
+  padding-bottom: 160px;
 }
 
 .testimonials-01 {
@@ -278,4 +279,15 @@ img {
   font-family: 'Barlow', sans-serif;
   margin-top: 10px;
   color: var(--secondary-color-gray03);
+}
+
+/* Slider de fotos - Sessão fotos */
+.container-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.container-slide img {
+  display: block;
+  max-width: 100%;
 }

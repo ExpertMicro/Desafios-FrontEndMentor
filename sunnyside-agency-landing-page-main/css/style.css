@@ -14,7 +14,7 @@ img {
   --primary-color-yellow: hsl(51, 100%, 49%);
   --primary-color-dark-cyan: hsl(167, 40%, 24%);
   --primary-color-blue: hsl(198, 62%, 26%);
-  --primary-color-cyan: hsl(168, 34%, 41%);
+  --primary-color-cyan: hsl(168, 44%, 70%);
 
   --secondary-color-dark-blue: hsl(212, 27%, 19%);
   --secondary-color-gray01: hsl(213, 9%, 39%);
@@ -62,7 +62,7 @@ img {
 }
 
 .title-intro h1 {
-  font-family: 'Fraunces', sans-serif;
+  font-family: 'Fraunces', serif;
   color: var(--secondary-color-white);
   text-transform: uppercase;
   font-weight: 700;
@@ -95,7 +95,7 @@ img {
 
 .card-description h2 {
   font-weight: 900;
-  font-family: 'Fraunces', sans-serif;
+  font-family: 'Fraunces', serif;
   font-size: 36px;
   color: var(--secondary-color-dark-blue);
 }
@@ -108,7 +108,7 @@ img {
 }
 
 .card-description a {
-  font-family: 'Fraunces', sans-serif;
+  font-family: 'Fraunces', serif;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--secondary-color-dark-blue);
@@ -138,7 +138,7 @@ img {
 
 .skill-01 h3 {
   font-size: 30px;
-  font-family: 'Fraunces', sans-serif;
+  font-family: 'Fraunces', serif;
   text-align: center;
   color: var(--primary-color-dark-cyan);
   font-weight: 900;
@@ -148,7 +148,7 @@ img {
 
 .skill-02 h3 {
   font-size: 30px;
-  font-family: 'Fraunces', sans-serif;
+  font-family: 'Fraunces', serif;
   text-align: center;
   color: var(--primary-color-dark-cyan);
   font-weight: 900;
@@ -175,7 +175,7 @@ img {
 
 .skill-02 h3 {
   font-size: 30px;
-  font-family: 'Fraunces', sans-serif;
+  font-family: 'Fraunces', serif;
   text-align: center;
   color: var(--primary-color-dark-cyan);
   font-weight: 900;
@@ -186,7 +186,7 @@ img {
 /* Section Client Testimonials */
 
 .testimonials h3 {
-  font-family: 'Fraunces', sans-serif;
+  font-family: 'Fraunces', serif;
   font-size: 22px;
   padding-top: 140px;
   text-transform: uppercase;
@@ -267,7 +267,7 @@ img {
   text-align: center;
   font-weight: 900;
   font-size: 18px;
-  font-family: 'Fraunces', sans-serif;
+  font-family: 'Fraunces', serif;
   margin-top: 40px;
   color: var(--secondary-color-dark-blue);
 }
@@ -290,4 +290,56 @@ img {
 .container-slide img {
   display: block;
   max-width: 100%;
+}
+
+/* Footer */
+.footer {
+  background: var(--primary-color-cyan);
+}
+
+.footer h4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  color: var(--primary-color-dark-cyan);
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav li {
+  list-style: none;
+}
+
+.footer-nav li + li {
+  margin-left: 40px;
+}
+
+.footer-nav ul li a {
+  font-family: 'Barlow', sans-serif;
+  text-decoration: none;
+  color: var(--primary-color-dark-cyan);
+}
+
+.social {
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
+.social ul {
+  display: flex;
+  justify-content: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li + li {
+  margin-left: 25px;
 }

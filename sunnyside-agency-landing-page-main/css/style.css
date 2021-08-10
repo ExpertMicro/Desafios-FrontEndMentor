@@ -15,6 +15,7 @@ img {
   --primary-color-dark-cyan: hsl(167, 40%, 24%);
   --primary-color-blue: hsl(198, 62%, 26%);
   --primary-color-cyan: hsl(168, 44%, 70%);
+  --color-btn: #85cfea;
 
   --secondary-color-dark-blue: hsl(212, 27%, 19%);
   --secondary-color-gray01: hsl(213, 9%, 39%);
@@ -53,6 +54,27 @@ img {
   font-family: 'Barlow', sans-serif;
 }
 
+.menu-nav .btn {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  background: #fff;
+  color: var(--secondary-color-dark-blue);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.menu-nav .btn:hover {
+  background: var(--color-btn);
+  color: #fff;
+}
+
 .menu-nav li + li {
   margin-left: 30px;
 }
@@ -84,17 +106,24 @@ img {
   align-items: center;
 }
 
+.card-02 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
 .img-egg img {
   width: 100%;
 }
 
 .card-content {
   max-width: 640px;
-  padding-left: 140px;
+  padding-left: 120px;
 }
 
 .card-description h2 {
   font-weight: 900;
+  padding-right: 80px;
   font-family: 'Fraunces', serif;
   font-size: 36px;
   color: var(--secondary-color-dark-blue);
@@ -162,7 +191,7 @@ img {
   text-align: center;
   max-width: 360px;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .skill-02 p {
@@ -171,6 +200,7 @@ img {
   max-width: 360px;
   margin: 0 auto;
   color: var(--primary-color-dark-cyan);
+  padding-bottom: 60px;
 }
 
 .skill-02 h3 {

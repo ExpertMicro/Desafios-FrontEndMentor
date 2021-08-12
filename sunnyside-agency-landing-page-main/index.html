@@ -18,6 +18,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
 </head>
 <body>
   
@@ -50,8 +51,24 @@
             </div>
 
             <div class="menu-mobile">
-              <a href="">
+              <a href="javascript:void(0);" onclick="myFunction()">
                 <img src="img/icon-hamburger.svg" alt="Menu Hamburger">
+                <div class="container top-nav" id="myLinks">
+                  <ul>
+                    <li>
+                      <a href="">About</a>
+                    </li>
+                    <li>
+                      <a href="#">Services</a>
+                    </li>
+                    <li>
+                      <a href="#">Projects</a>
+                    </li>
+                    <li>
+                      <a class="btn" href="#">Contact</a>
+                    </li>
+                  </ul>
+                </div>
               </a>
             </div>
           </header>
@@ -205,6 +222,18 @@
       </div>
     </div>
   </footer>
+
+
+  <script>
+    function myFunction() {
+      let x = document.getElementById('myLinks');
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 </body>
 
 <!-- 

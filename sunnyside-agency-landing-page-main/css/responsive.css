@@ -1,12 +1,28 @@
 /* for-phone-only */
 @media (max-width: 599px) {
+  .menu-mobile {
+    display: block;
+  }
   .container-slide {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  .menu-nav {
+    display: none;
+  }
+  .intro-bg {
+    background: url('../img/mobile/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 550px;
+  }
 }
 
 @media(max-width: 900px) {
+  .menu-nav ul li a {
+    font-size: 16px;
+  }
   .card-01 {
     display: flex;
     flex-direction: column-reverse;

@@ -55,6 +55,26 @@ img {
   font-family: 'Barlow', sans-serif;
 }
 
+.hover-effect a::after {
+  content: '';
+  display: block;
+  position: relative;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scale(0);
+  -webkit-transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color-yellow);
+  -webkit-transition: transform 250ms;
+  transition: transform 250ms;
+}
+
+.hover-effect a:hover:after {
+  transform: translateX(-50%) scaleX(1);
+}
+
 .menu-nav .btn {
   font-size: 16px;
   text-transform: uppercase;
@@ -148,6 +168,24 @@ img {
   display: flex;
   justify-content: center;
   padding-bottom: 240px;
+}
+
+.arrow img {
+  animation: arrowUpDown 3s ease infinite;
+}
+
+/* Animação da seta */
+@keyframes arrowUpDown {
+  0% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+  
 }
 
 .card-01 {
@@ -422,4 +460,12 @@ img {
 
 .social li + li {
   margin-left: 25px;
+}
+
+.attribution {
+  padding-bottom: 20px;
+}
+
+.attribution a {
+  font-size: 14px;
 }

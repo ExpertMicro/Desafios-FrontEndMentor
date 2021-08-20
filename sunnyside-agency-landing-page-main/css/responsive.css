@@ -15,7 +15,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 550px;
+    height: 100vh;
+  }
+
+  .arrow img {
+    display: none;
   }
 }
 

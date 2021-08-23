@@ -28,6 +28,19 @@ img {
   --secondary-color-gray02: hsl(232, 10%, 55%);
   --secondary-color-gray03: hsl(210, 4%, 67%);
   --secondary-color-white: hsl(0, 0%, 100%);
+
+  --animate-duration: 2s;
+  --animate-delay: 2s;
+  --animate-repeat: 1;
+}
+
+.animate__animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .container {
@@ -484,4 +497,46 @@ img {
 
 .attribution a {
   font-size: 14px;
+}
+
+
+/* Animações FadeInRight - sessão card */
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(30%, 0, 0);
+    transform: translate3d(30%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(30%, 0, 0);
+    transform: translate3d(30%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.js-scroll {
+  opacity: 0;
+}
+
+.js-scroll.ativo {
+  opacity: 1;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight
 }

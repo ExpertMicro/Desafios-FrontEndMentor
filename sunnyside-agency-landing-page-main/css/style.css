@@ -221,6 +221,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  position: relative;
 }
 
 .card-02 {
@@ -556,25 +557,4 @@ img {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-}
-
-
-[data-anima="scrollFadeInRight"] {
-  opacity: 0;
-}
-[data-anima="scrollFadeInUp"] {
-  opacity: 0;
-}
-
-[data-anima="scrollFadeInRight"].animate__fadeInRight {
-  opacity: 1;
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight
-}
-
-
-[data-anima="scrollFadeInUp"].animate__fadeInUp {
-  opacity: 1;
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }

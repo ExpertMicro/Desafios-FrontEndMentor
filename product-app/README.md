@@ -1,4 +1,4 @@
-# product-page
+# product-app
 
 ## Project setup
 ```
